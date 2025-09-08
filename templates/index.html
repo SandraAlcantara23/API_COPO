@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Copo de Nieve - Curva de Koch</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        button {
+            background: #4a6cff;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #374bdb;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Generar Copo de Nieve (Curva de Koch)</h2>
+        <form method="POST">
+            <label>Orden:</label>
+            <input type="number" name="orden" min="1" max="7" value="5">
+            <br>
+            <button type="submit">Dibujar Copo</button>
+        </form>
+    </div>
+</body>
+</html>
